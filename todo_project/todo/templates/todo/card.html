@@ -2,7 +2,6 @@
 {% block content %}
     <div class="py-5">
         {% for task in queryset %}
-
             <div class="card">
                 <div class="card-body">
                     <div class="card-title">
@@ -14,12 +13,12 @@
                                 <h6 class="task-text">{{ task.text }}<h6>
                             </div>
                         </div>
-                        <div class="col">
-                            <button type="button" class="btn btn-danger" id="del" onclick="deletetask()">DELETE</button>    
+                        <div class="col">    
+                            <a href=" {% url 'delete' task.title %} " class="link-as-button">DELETE</a>
+                            <!--<a href="#" class="link-as-button">EDIT</a>-->
+                            <!--to be made later -->
                         </div>
                     </div>
-                    
-                    
                 </div>
             </div>
         {% endfor %}
