@@ -1,0 +1,27 @@
+{% extends 'todo/base.html' %}
+{% block content %}
+    <div class="py-5">
+        {% for task in queryset %}
+
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-title">
+                        <h3 class="task-title">{{ task.title }}</h3>
+                    </div>
+                    <div class="row">
+                        <div class="col-10">
+                            <div class="card-text">
+                                <h6 class="task-text">{{ task.text }}<h6>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <button type="button" class="btn btn-danger" id="del" onclick="deletetask()">DELETE</button>    
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
