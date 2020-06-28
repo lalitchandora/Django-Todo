@@ -21,8 +21,8 @@ Standard
 
 **Built With**
 
-[Django](https://www.djangoproject.com/)
-[Bootstrap 4](https://getbootstrap.com/)
+- [Django](https://www.djangoproject.com/)
+- [Bootstrap 4](https://getbootstrap.com/)
 
 ## Features
 
@@ -35,3 +35,4 @@ Clone the github repository:
 ```
 git clone https://github.com/lalitchandora/Django-Todo
 ```
+
