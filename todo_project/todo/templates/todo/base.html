@@ -10,7 +10,8 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 	<link rel="stylesheet" href=" {% static 'css/style.css' %} ">  {% comment %} external link to css file {% endcomment %}
 	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
-	 <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:wght@600&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:wght@600&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet"> 
 		<title>To-do</title>
 	</head>
 	<body>
@@ -20,7 +21,7 @@
 			{% if url is not None %}
 				<button type="button" class="btn btn-primary" id="add" data-toggle="modal" data-target="#exampleModal">ADD</button>
 			{% endif %}
-			
+
 			<div class="modal fade" id="exampleModal" tabindex="2" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 			<div class="modal-dialog" role="document">
 				<div class="modal-content">

@@ -31,7 +31,8 @@
     font-family: 'Oswald', sans-serif;
     font-size: 20px;
 } 
-.link-as-button:hover,#add:hover,{
+
+.link-as-button:hover,#add:hover{
     text-decoration: none;
     color:white;
 }
@@ -59,7 +60,7 @@ body{
 }
 
 .task-text{
-    font-family: 'Poppins', sans-serif; 
+    font-family: 'Quicksand', sans-serif;
     font-size: 23px;
 }
 
