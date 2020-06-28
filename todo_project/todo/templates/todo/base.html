@@ -15,9 +15,12 @@
 	</head>
 	<body>
 		<nav class="navbar">
+			
 			<a class="navbar-brand" href=" {% url 'home' %} ">Todo App</a>
-			<button type="button" class="btn btn-primary" id="add" data-toggle="modal" data-target="#exampleModal">ADD</button>
-
+			{% if url is not None %}
+				<button type="button" class="btn btn-primary" id="add" data-toggle="modal" data-target="#exampleModal">ADD</button>
+			{% endif %}
+			
 			<div class="modal fade" id="exampleModal" tabindex="2" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 			<div class="modal-dialog" role="document">
 				<div class="modal-content">

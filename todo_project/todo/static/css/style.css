@@ -14,7 +14,7 @@
     color: white;
 }
 
-#add{
+#add,.save{
     padding: 5px 25px;   
     background-color: red;
     color: white;
@@ -31,9 +31,13 @@
     font-family: 'Oswald', sans-serif;
     font-size: 20px;
 } 
-.link-as-button:hover,#add:hover{
+.link-as-button:hover,#add:hover,{
     text-decoration: none;
     color:white;
+}
+
+.save:hover{
+    background-color: red;
 }
 
 body{
@@ -51,8 +55,20 @@ body{
 .task-title{
     font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
+    font-size: 30px;
 }
 
 .task-text{
     font-family: 'Poppins', sans-serif; 
+    font-size: 23px;
+}
+
+.edit_form{
+    margin: auto;
+    width: 50%;
+}
+
+.card-text{
+    white-space: pre-wrap; 
+    /* prewrap set for line and tab breaks in card */
 }
