@@ -4,7 +4,7 @@ A basic todo app used for managing tasks
 
 ## Code Style
 
-Standard
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Screenshots
 
