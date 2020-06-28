@@ -12,7 +12,7 @@ Standard
 ![Image file of the web app](https://github.com/lalitchandora/Django-Todo/blob/master/screenshots/homepage.png)
 
 ###### Add Task
-![Image file of the web app](https://github.com/lalitchandora/Django-Todo/blob/master/screenshots/add task.png)
+![Image file of the web app](https://github.com/lalitchandora/Django-Todo/blob/master/screenshots/add%20task.png)
 
 ###### Edit Task
 ![Image file of the web app](https://github.com/lalitchandora/Django-Todo/blob/master/screenshots/update task.png)
