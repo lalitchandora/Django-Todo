@@ -30,9 +30,25 @@ Todo app which allows user to add task, delete task and edit task. The app is st
 
 ## Installation
 
-Clone the github repository:
+- Clone the github repository:
 
 ```
 git clone https://github.com/lalitchandora/Django-Todo
 ```
 
+- cd into the Django todo_project and migrate database
+
+```
+python manage.py makemigrations
+python manage.py migrate
+```
+
+- Run server
+
+```
+python manage.py runserver
+```
+
+## License
+
+GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007Copyright (C) 2007 Free Software Foundation
