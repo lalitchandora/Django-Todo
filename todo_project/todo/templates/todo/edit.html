@@ -3,7 +3,7 @@
 <div class="container mt-5 edit_form">
     <form method="POST" class="post-form">
         {% csrf_token %}
-        {{ form.as_p }}
+        {{ form|crispy }}
         <button type="submit" class="save btn btn-primary ml-4">UPDATE TASK</button>
     </form>
 

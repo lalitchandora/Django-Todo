@@ -13,9 +13,9 @@ def home(request):
     queryset = Task.objects.all()[::-1]
     context = {
         'queryset': queryset,
-        'form':form,
+        'form': form,
         'url': 'home'
-        }
+    }
     return render(request,'todo/card.html', context)
 
 def deletetask(request,title):

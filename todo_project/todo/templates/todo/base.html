@@ -1,4 +1,5 @@
 {% load static %} {% comment %} for adding css files {% endcomment %}
+{% load crispy_forms_tags %}
 <!doctype html>
 <html lang="en">
 	<head>
@@ -34,7 +35,7 @@
 					<div class="modal-body">
 						<form method="POST" class="post-form">
 							{% csrf_token %}
-							{{ form.as_p }}
+							{{ form|crispy }}
 							<button type="submit" class="save btn btn-primary">SAVE TASK</button>
 						</form>
 					</div>
