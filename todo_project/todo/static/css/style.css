@@ -70,6 +70,6 @@ body{
 }
 
 .card-text{
-    white-space: pre-wrap; 
+    /* white-space: pre-wrap;  */
     /* prewrap set for line and tab breaks in card */
 }

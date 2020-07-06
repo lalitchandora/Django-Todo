@@ -6,7 +6,7 @@ def home(request):
     if request.method=="POST":
         form = CreateTaskForm(request.POST)
         if form.is_valid():
-            form.save()
+            form.save() #code for saving the form
             return redirect('home')
     else:
         form = CreateTaskForm()
