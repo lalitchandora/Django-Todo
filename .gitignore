@@ -1,3 +1,6 @@
 .venv
 .vscode
 db.sqlite3
+todo_project/todo/__pycache__
+todo_project/todo_project/__pycache__
+todo_project/todo/migrations/__pycache__
