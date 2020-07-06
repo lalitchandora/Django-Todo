@@ -18,13 +18,13 @@ def home(request):
     }
     return render(request,'todo/card.html', context)
 
-def deletetask(request,title):
-    Task.objects.filter(title=title).delete()
+def deletetask(request,id):
+    Task.objects.filter(id=id).delete()
     return redirect('home')
 
 
-def edittask(request,title):
-    task = get_object_or_404(Task,title=title)
+def edittask(request,id):
+    task = get_object_or_404(Task,id=id)
     if request.method=="POST":
         form = CreateTaskForm(request.POST,instance=task)
         if form.is_valid():
