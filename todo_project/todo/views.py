@@ -4,7 +4,7 @@ from .forms import CreateTaskForm
 
 def home(request):
     if request.method=="POST":
-        form = CreateTaskForm(request.POST)
+        form = CreateTaskForm(request.POST, request.FILES)
         if form.is_valid():
             form.save()
             return redirect('home')
@@ -26,7 +26,7 @@ def deletetask(request,id):
 def edittask(request,id):
     task = get_object_or_404(Task,id=id)
     if request.method=="POST":
-        form = CreateTaskForm(request.POST,instance=task)
+        form = CreateTaskForm(request.POST, request.FILES, instance=task)
         if form.is_valid():
             form.save()
             return redirect('home')

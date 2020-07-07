@@ -33,7 +33,7 @@
 						</button>
 					</div>
 					<div class="modal-body">
-						<form method="POST" class="post-form">
+						<form method="POST" class="post-form" enctype="multipart/form-data">
 							{% csrf_token %}
 							{{ form|crispy }}
 							<button type="submit" class="save btn btn-primary">SAVE TASK</button>
