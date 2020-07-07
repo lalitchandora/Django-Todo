@@ -18,7 +18,13 @@
                         </div>
                     </div>
                     <div class="card-text">
-                        <h6>{{ task.date|date:"D, d M Y" }}</h6>
+                        {% if task.was_added_today %}
+                            
+                            <h6>Today</h6>
+                        {% else %}
+                            <h6>{{ task.date|date:"D, d M Y" }}</h6>
+                        {% endif %}
+                        
                         {% if task.image %}
                             <img src={{ task.image.url }}>
                         {% endif %}

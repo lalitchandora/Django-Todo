@@ -11,10 +11,10 @@ def home(request):
     else:
         form = CreateTaskForm()
     queryset = Task.objects.all()[::-1]
+    
     context = {
         'queryset': queryset,
         'form': form,
-        'url': 'home'
     }
     return render(request,'todo/card.html', context)
 

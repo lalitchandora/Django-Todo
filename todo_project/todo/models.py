@@ -1,4 +1,5 @@
 from django.db import models
+from django.utils import timezone
 
 class Task(models.Model):
     title = models.CharField(max_length=50)
@@ -9,3 +10,7 @@ class Task(models.Model):
     def __str__(self):
         return self.title
     
+    def was_added_today(self):
+        return self.date == timezone.now().date()
+        
+
