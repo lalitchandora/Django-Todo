@@ -52,3 +52,7 @@ python manage.py runserver
 ## License
 
 GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007Copyright (C) 2007 Free Software Foundation
+
+## Major Changes
+
+- Added Image Feature to add to every task
