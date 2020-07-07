@@ -19,8 +19,11 @@
                     </div>
                     <div class="card-text">
                         <h6>{{ task.date|date:"D, d M Y" }}</h6>
-
-                        <h6 class="task-text">{{ task.text|linebreaks }}<h6>
+                        {% if task.image %}
+                            <img src={{ task.image.url }}>
+                        {% endif %}
+                        
+                        <h6 class="task-text">{{ task.text|linebreaksbr }}<h6>
                     </div>                
                 </div>
             </div>
