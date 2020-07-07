@@ -19,28 +19,28 @@
 		<nav class="navbar">
 			
 			<a class="navbar-brand" href=" {% url 'home' %} ">Todo App</a>
-			{% if url is not None %}
-				<button type="button" class="btn btn-primary" id="add" data-toggle="modal" data-target="#exampleModal">ADD</button>
-			{% endif %}
+			
+			<button type="button" class="btn btn-primary" id="add" data-toggle="modal" data-target="#exampleModal">ADD</button>
+
 
 			<div class="modal fade" id="exampleModal" tabindex="2" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-			<div class="modal-dialog" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5 class="modal-title" id="exampleModalLabel">Add Task</h5>
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-							<span aria-hidden="true">&times;</span>
-						</button>
-					</div>
-					<div class="modal-body">
-						<form method="POST" class="post-form" enctype="multipart/form-data">
-							{% csrf_token %}
-							{{ form|crispy }}
-							<button type="submit" class="save btn btn-primary">SAVE TASK</button>
-						</form>
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLabel">Add Task</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<form method="POST" class="post-form" enctype="multipart/form-data">
+								{% csrf_token %}
+								{{ form|crispy }}
+								<button type="submit" class="save btn btn-primary">SAVE TASK</button>
+							</form>
+						</div>
 					</div>
 				</div>
-			</div>
 			</div>
 		</nav>
 
