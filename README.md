@@ -26,7 +26,9 @@ A basic todo app used for managing tasks
 
 ## Features
 
-Todo app which allows user to add task, delete task and edit task. The app is styled using Bootstrap4 and can be used by anyone.
+- Allows the user to add projects 
+- Allows to add manage bugs in every project
+- Bug has priority (low, medium, high) and state(resolved, unresolved)
 
 ## Installation
 
@@ -42,6 +44,8 @@ git clone https://github.com/lalitchandora/Django-Todo
 python manage.py makemigrations
 python manage.py migrate
 ```
+
+- set your database in the settings.py file
 
 - Run server
 
